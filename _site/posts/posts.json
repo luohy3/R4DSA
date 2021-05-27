@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to R for Data Science and Analyst",
+    "description": "This blog consists of a collection of R tutorials, notebooks tops and tricks. We hope you enjoy reading what we have to say!",
+    "author": [
+      {
+        "name": "Luo haoyu",
+        "url": "https://github.com/luohy3"
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-05-22T10:19:26+08:00",
+    "input_file": "welcome.knit.md"
+  }
+]
