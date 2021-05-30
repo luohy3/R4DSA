@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-05-30-dataviz-makeover-1/",
+    "title": "DataViz Makeover 1",
+    "description": "This is a graph for merchandise trade of 6 regions, 2019-2021",
+    "author": [
+      {
+        "name": "Luo haoyu",
+        "url": "https://github.com/luohy3"
+      }
+    ],
+    "date": "2021-05-30",
+    "categories": [],
+    "contents": "\r\n1 Critique of Visualisation\r\nThe original visualisation can be seen below.\r\n\r\n1.1 Clarity\r\nArea chart makes it difficult to gage height. Two areas overlap and looks messy. Also, area chart doesn't show the data is a time-series data.\r\nTitle (2019-2020) and content (2019-2021) are not consistent.\r\nInconsistent Y-axis for different countries makes it hard to compare. For e.g. Some use 0-6M, some use 0-8M, some use 0-2M.\r\nSecondary axis makes it hard to compare import and export data.\r\nX-axis should use title ‘Year of period’ as it only shows Year.\r\nData source not included.\r\nAnnotations are not used meaning this is no further elucidation for the graph.\r\n1.2 Aesthetic\r\nFormat of axes: vertical title of Y-axis\r\nHorrible color choice for import and export, not distinctive.\r\nUgly font size: Title is smaller than the country name.\r\nGird lines already out the graph.\r\nNo any picture included.\r\n2 Alternative Design\r\nThe proposed design is as follows.\r\n\r\n2.1 Clarity\r\nUse line chart to show the time-series data, which shows the trend clearly.\r\nDifferent regions use the same Y axis and they are in the same row, makes it easy and clear to compare. Also imports and exports use the same axis, makes it easy to compare these 2 categories.\r\nHave title and sub-title to emphasize the key observations.\r\nHave trend line to show the important date and use annotations to show details.\r\n2.2 Aesthetic\r\nCall-outs with images aid cognition.\r\nTick marks are used for years.\r\nData source and image source is included.\r\n3 Proposed Visualisation\r\nPlease view the interactive visualisation on Tableau Public here.\r\n4 Step-by-step Guide\r\n1 Import the data into Tableau. \r\n2 Use prep cleaning \r\n3 Use Tableau to pivot the data in sheet. Do the same with T2.\r\n4 Change the relationship for T1 and T2 like this. \r\n5 Change the data type and name for T1 and T2 in the worksheet. \r\n6 Use filter to get the country and date we want. \r\n7 Drag the columns and rows from data. \r\n8 Choose line graph. \r\n9 Change date(year) to date(month) \r\n10 Add title, sub-title, sources \r\n11 Change Y axis, use the same range for imports and exports, then hide one of the Y axis. \r\n12 Remove the title for X axis and Y axis. \r\n13 Change format to get the tick marks for both axes. \r\n14 Add grid lines for row. \r\n15 Hide field labels ‘country’. \r\n16 Change the region names. Remove ‘Thousand dollars’. \r\n17 Add a reference line. \r\n18 Change the reference line looking and add marks. \r\n19 Create a dashboard and drag the graph into it. \r\n20 Set the labels floating. \r\n21 Insert an image object and adjust its size. \r\n22 Adjust the graph size for better looking and now it looks like this. \r\n5 Derived Insights\r\nIn 2020 Mar, when COVID-19 outbroke, all 6 regions get influenced and their imports and exports amount both declined. After a quarter, merchandise trade for these 6 regions begin to recover.\r\nHong Kong's exports rise sharply after May 2020, in Mar 2021, it has reached 7.4M thousand dollars.\r\nTaiwan's imports rise sharply after for the whole period, it is only slightly influenced by COVID-19. In Mar 2021 it has reached 5.4M thousand dollars.\r\nHong Kong's exports is much higher than imports. While Taiwan's imports is much higher than exports.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-05-30T21:07:50+08:00",
+    "input_file": "dataviz-makeover-1.knit.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to R for Data Science and Analyst",
     "description": "This blog consists of a collection of R tutorials, notebooks tops and tricks. We hope you enjoy reading what we have to say!",

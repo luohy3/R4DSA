@@ -1,0 +1,157 @@
+---
+title: "DataViz Makeover 1"
+description: |
+  This is a graph for merchandise trade of 6 regions, 2019-2021
+author:
+  - name: Luo haoyu
+    url: https://github.com/luohy3
+date: 05-30-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# **1 Critique of Visualisation**
+
+The original visualisation can be seen below.
+
+![](pic/1.png)
+
+### 1.1 Clarity
+
+1. Area chart makes it difficult to gage height. Two areas overlap and looks messy. Also, area chart doesn&#39;t show the data is a time-series data.
+2. Title (2019-2020) and content (2019-2021) are not consistent.
+3. Inconsistent Y-axis for different countries makes it hard to compare. For e.g. Some use 0-6M, some use 0-8M, some use 0-2M.
+4. Secondary axis makes it hard to compare import and export data.
+5. X-axis should use title &#39;Year of period&#39; as it only shows Year.
+6. Data source not included.
+7. Annotations are not used meaning this is no further elucidation for the graph.
+
+### 1.2 Aesthetic
+
+1. Format of axes: vertical title of Y-axis
+2. Horrible color choice for import and export, not distinctive.
+3. Ugly font size: Title is smaller than the country name.
+4. Gird lines already out the graph.
+5. No any picture included.
+
+# 2 Alternative Design
+
+The proposed design is as follows.
+
+![](pic/2.jpg)
+
+### 2.1 Clarity
+
+1. Use line chart to show the time-series data, which shows the trend clearly.
+
+2. Different regions use the same Y axis and they are in the same row, makes it easy and clear to compare. Also imports and exports use the same axis, makes it easy to compare these 2 categories.
+
+3. Have title and sub-title to emphasize the key observations.
+
+4. Have trend line to show the important date and use annotations to show details.
+
+### 2.2 Aesthetic
+
+1. Call-outs with images aid cognition.
+
+2. Tick marks are used for years.
+
+3. Data source and image source is included.
+
+# 3 Proposed Visualisation
+
+ Please view the interactive visualisation on Tableau Public [here](https://public.tableau.com/app/profile/luo.haoyu/viz/Book1_16223766103090/Dashboard1).
+
+# 4 Step-by-step Guide
+
+
+ 1  Import the data into Tableau. 
+ ![](pic/3.png) 
+ 
+ 2  Use prep cleaning 
+ ![](pic/4.png)
+ 
+ 3 Use Tableau to pivot the data in sheet. Do the same with T2.  
+ ![](pic/5.png) 
+ ![](pic/6.png) 
+ 
+ 4  Change the relationship for T1 and T2 like this. 
+ ![](pic/7.png) 
+ 
+ 5  Change the data type and name for T1 and T2 in the worksheet. 
+ ![](pic/8.png) 
+ 
+ 6  Use filter to get the country and date we want. 
+ ![](pic/9.png) 
+ ![](pic/10.png) 
+ 
+ 7  Drag the columns and rows from data. 
+ ![](pic/11.png) 
+ 
+ 8  Choose line graph. 
+ ![](pic/12.png) 
+ 
+ 9  Change date(year) to date(month) 
+ ![](pic/13.png) 
+ 
+ 10  Add title, sub-title, sources 
+ ![](pic/14.png) 
+ 
+ 11  Change Y axis, use the same range for imports and exports, then hide one of the Y axis. 
+ ![](pic/15.png) 
+ ![](pic/16.png) 
+ ![](pic/17.png) 
+ 
+ 12  Remove the title for X axis and Y axis. 
+ ![](pic/18.png) 
+ ![](pic/19.png) 
+ 
+ 13  Change format to get the tick marks for both axes. 
+ ![](pic/20.png) 
+ ![](pic/21.png) 
+ 
+ 14  Add grid lines for row. 
+ ![](pic/22.png) 
+ 
+ 15  Hide field labels &#39;country&#39;.
+ ![](pic/23.png) 
+ 
+ 16  Change the region names. Remove &#39;Thousand dollars&#39;. 
+ ![](pic/24.png) 
+ 
+ 17  Add a reference line. 
+ ![](pic/25.png) ![](pic/26.png)
+ 
+ 18  Change the reference line looking and add marks. 
+ ![](pic/27.png)
+ ![](pic/28.png)
+ ![](pic/29.png) 
+ 
+ 19  Create a dashboard and drag the graph into it. 
+ ![](pic/30.png) 
+ 
+ 20  Set the labels floating. 
+ ![](pic/31.png) 
+ 
+ 21  Insert an image object and adjust its size. 
+ ![](pic/32.png) 
+ ![](pic/33.png) 
+ 
+ 22  Adjust the graph size for better looking and now it looks like this. 
+ ![](pic/34.png) 
+
+
+# 5 Derived Insights
+
+1. In 2020 Mar, when COVID-19 outbroke, all 6 regions get influenced and their imports and exports amount both declined. After a quarter, merchandise trade for these 6 regions begin to recover.
+2. Hong Kong&#39;s exports rise sharply after May 2020, in Mar 2021, it has reached 7.4M thousand dollars.
+3. Taiwan&#39;s imports rise sharply after for the whole period, it is only slightly influenced by COVID-19. In Mar 2021 it has reached 5.4M thousand dollars.
+4. Hong Kong&#39;s exports is much higher than imports. While Taiwan&#39;s imports is much higher than exports.
+
